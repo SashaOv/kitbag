@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "kitbag"
+version = "0.1.1"
+description = "My little personal projects and utilities"
+authors = ["Sasha Ovsankin <sasha@ovsankin.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "kitbag"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+genpass = "kitbag.genpass:genpass"
+aif2flac = "kitbag.aif2flac:cli"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
