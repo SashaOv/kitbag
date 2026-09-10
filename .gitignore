@@ -1,6 +1,5 @@
 .DS_Store
-.idea/
 work/
 __pycache__/
-poetry.lock
+uv.lock
 /.venv/
