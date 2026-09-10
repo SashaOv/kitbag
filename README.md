@@ -26,5 +26,17 @@ sleekprint = { path = "../kitbag/sleekprint", editable = true }
 ```
 
 ```bash
-uv tool install -e ~/personal/kitbag/pdfscore
+uv tool install -e ./pdfscore
+```
+
+**Override an installed tool** with this checkout (installed from git, now hacking locally):
+
+```bash
+uv tool install --force -e ./pdfscore
+```
+
+**Install as a local package** (import it, editable — replaces any existing install, no `--force` needed):
+
+```bash
+uv pip install -e ./pdfscore
 ```
