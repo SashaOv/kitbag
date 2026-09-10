@@ -1,0 +1,20 @@
+[project]
+name = "pdfscore"
+version = "0.1.0"
+description = "Export MuseScore .mscz files to PDF, with optional transposed versions"
+authors = [
+    {name = "Sasha Ovsankin", email = "sasha@ovsankin.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.13"
+dependencies = [
+    "cyclopts",
+    "runcorder",
+]
+
+[project.scripts]
+pdfscore = "pdfscore:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
