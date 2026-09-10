@@ -1,1 +1,1 @@
-# Git Extensions
+# Git Utilities
