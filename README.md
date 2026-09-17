@@ -1,6 +1,6 @@
 # kitbag
 
-Small utilities I use in different projects. Each tool is its own package.
+Utilities I use in different projects, small so they not deserve their own repo. Each tool is its own package.
 
 ## Use
 

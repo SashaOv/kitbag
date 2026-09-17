@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import base64
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -18,7 +19,7 @@ from xml.etree import ElementTree
 
 import cyclopts
 import runcorder
-from cyclopts import Parameter
+from cyclopts import CycloptsError, CycloptsPanel, Parameter
 
 
 class UserError(Exception):
@@ -55,10 +56,18 @@ class ScorePart:
 
 MAIN_SCORE = "Main score"
 
+def _command_name() -> str:
+    return os.path.basename(sys.argv[0])
+
+
+def _format_error(e: CycloptsError):
+    return CycloptsPanel(f"{e}\n\n{_command_name()} --help for usage.")
+
+
 
 app = cyclopts.App(
     help="Export MuseScore .mscz files to PDF, with optional transposed versions.",
-)
+    error_formatter=_format_error)
 
 # MuseScore CLI interval IDs for common semitone shifts (by_interval mode).
 SEMITONE_INTERVALS: dict[int, int] = {
