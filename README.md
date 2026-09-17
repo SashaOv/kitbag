@@ -1,6 +1,6 @@
 # kitbag
 
-This is monorepo for small projects, which don't yet deserve their own repo. Each tool is its own package.
+This is a [monorepo](https://en.wikipedia.org/wiki/Monorepo) for small projects that don't yet deserve their own repo. Each project is its own package and can be installed independenly.
 
 ## Use
 
