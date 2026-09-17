@@ -1,6 +1,6 @@
 # kitbag
 
-Utilities I use in different projects, small so they not deserve their own repo. Each tool is its own package.
+This is monorepo for small projects, which don't yet deserve their own repo. Each tool is its own package.
 
 ## Use
 
