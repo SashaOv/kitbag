@@ -9,13 +9,15 @@ Each subdirectory is a package with its own `pyproject.toml`.
 **Library** (import it in a project):
 
 ```bash
-uv add "sleekprint @ git+ssh://git@github.com/SashaOv/kitbag.git#subdirectory=sleekprint"
+uv add "sleekprint @ https://git@github.com/SashaOv/kitbag.git#subdirectory=sleekprint"
 ```
+
+**Note**: you can use 'git+ssh:' URL schema if you are set up for it.
 
 **CLI** (put a command on `PATH`):
 
 ```bash
-uv tool install "git+ssh://git@github.com/SashaOv/kitbag.git#subdirectory=pdfscore"
+uv tool install "https://git@github.com/SashaOv/kitbag.git#subdirectory=pdfscore"
 ```
 
 **Local, not pushed yet** — point the same dependency at this checkout:
