@@ -42,3 +42,13 @@ uv tool install --force -e ./pdfscore
 ```bash
 uv pip install -e ./pdfscore
 ```
+
+## bin/
+
+This is a directory of very small script(s) (currently one). To install every script (git-authors as example):
+
+```
+ln -s `pwd`/bin/git-authors ~/.local/bin
+```
+
+The `pwd` command is required to create link with the correct target path.
