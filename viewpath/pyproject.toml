@@ -1,0 +1,20 @@
+[project]
+name = "viewpath"
+version = "0.1.0"
+description = "Path navigated lexically through symlinks, relative to a base directory"
+authors = [
+    {name = "Sasha Ovsankin", email = "sasha@ovsankin.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

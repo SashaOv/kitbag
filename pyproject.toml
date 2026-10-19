@@ -23,4 +23,4 @@ build-backend = "hatchling.build"
 packages = ["kitbag"]
 
 [tool.uv.workspace]
-members = ["pdfscore"]
+members = ["pdfscore", "viewpath"]
