@@ -1,0 +1,23 @@
+[project]
+name = "sleekprint"
+version = "0.1.0"
+description = "Width-aware YAML pretty-printer: inline when it fits, block when it doesn't"
+authors = [
+    {name = "Sasha Ovsankin", email = "sasha@ovsankin.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyyaml>=6.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "hypothesis>=6.165.2",
+]
